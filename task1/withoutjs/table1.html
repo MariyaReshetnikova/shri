@@ -1,0 +1,641 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/media.css">
+	<title>Онлайн-табло аэропорта Гумрак</title>
+<!-- 	Реализация без Java Script   -->
+</head>
+<body>
+<div id="tablo">
+		<input type="checkbox" id="out_check" checked >
+		<label for="out_check" >Прибытие</label>
+					<br>
+					<br>
+		<input type="checkbox"  id="arrival_check" checked >
+		<label for="arrival_check" >Отправление</label>
+					<br>
+				
+				
+		<table >
+           <tbody >   
+			<tr id="tablo_thead">
+                    <td >Тип рейса</td>
+                    <td >Номер рейса</td>
+                    <td>Авиакомпания</td>
+                    <td>Логотип авиакомпании</td>
+					<td >Тип воздушного судна</td>
+                    <td >Аэропорт назначения</td>
+                    <td >Время вылета</td>
+                    <td >Время прилёта</td>
+                    <td >Статус рейса</td>
+                    <td >Примечание</td>
+                </tr>
+			</tbody>
+		</table>
+
+        <table id="arrival">
+           <tbody>
+			<tr >
+			 <td ><a href="#arrwin1" class="infoUN"></a></td>
+                    <td> <a href="#arrwin1" class="info">S7 1170</a></td>
+                    <td><a href="#arrwin1" class="info">S7 Airlines</a></td>
+                    <td><a href="#arrwin1" class="infoimg"><img src="img/s7logo.png"></a></td>
+					<td ><a href="#arrwin1" class="infoUN">Airobus A319</a></td>
+                    <td ><a href="#arrwin1" class="info">Домодедово</a></td>
+                    <td ><a href="#arrwin1" class="infotime">13 августа, 05:25</a></td>
+                    <td ><a href="#arrwin1" class="infotime">13 августа, 07:30</a></td>
+                    <td ><a href="#arrwin1" class="info">вылетел</a></td>
+                    <td ><a href="#arrwin1" class="infotime">-</a></td>
+                </tr>
+				<tr >
+                    <td ><a href="#arrwin2" class="info"></a></td>
+                    <td> <a href="#arrwin2" class="info">SU 1185</a></td>
+                    <td><a href="#arrwin2" class="info">Аэрофлот</a></td>
+                    <td><a href="#arrwin2" class="infoimg"><img src="img/alogo.png"></a></td>
+					<td ><a href="#arrwin2" class="infoUN">Airobus A320</a></td>
+                    <td ><a href="#arrwin2" class="info">Шереметьево</a></td>
+                    <td ><a href="#arrwin2" class="infotime">13 августа, 06:05</a></td>
+                    <td ><a href="#arrwin2" class="infotime">13 августа, 08:35</a></td>
+                    <td ><a href="#arrwin2" class="info">вылетел</a></td>
+                    <td ><a href="#arrwin2" class="infotime">-</a></td>
+                </tr><tr >
+                    <td ><a href="#arrwin3" class="info"></a></td>
+                    <td> <a href="#arrwin3" class="info">5N 512</a></td>
+                    <td><a href="#arrwin3" class="info">Нордавиа</a></td>
+                    <td><a href="#arrwin3" class="infoimg"><img src="img/nordlogo.png"></a></td>
+					<td ><a href="#arrwin3" class="infoUN">Boeing 737-500</a></td>
+                    <td ><a href="#arrwin3" class="info">Санкт-Петербург</a></td>
+                    <td ><a href="#arrwin3" class="infotime">13 августа, 06:35</a></td>
+                    <td ><a href="#arrwin3" class="infotime">13 августа, 9:45</a></td>
+                    <td ><a href="#arrwin3" class="info">посадка закончена</a></td>
+                    <td ><a href="#arrwin3" class="infotime">-</a></td>
+                </tr>
+				<tr >
+                    <td ><a href="#arrwin4" class="info"></a></td>
+                    <td> <a href="#arrwin4" class="info">U6 581</a></td>
+                    <td><a href="#arrwin4" class="info">Уральские Авиалинии</a></td>
+                    <td><a href="#arrwin4" class="infoimg"><img src="img/urallogo.png"></a></td>
+					<td ><a href="#arrwin4" class="infoUN">Airobus A320</a></td>
+                    <td ><a href="#arrwin4" class="info">Симферополь</a></td>
+                    <td ><a href="#arrwin4" class="infotime">13 августа, 11:05</a></td>
+                    <td ><a href="#arrwin4" class="infotime">13 августа, 13:45</a></td>
+                    <td ><a href="#arrwin4" class="info">регистрация</a></td>
+                    <td ><a href="#arrwin4" class="infotime">до окончания регистрации 20 мин.</a></td>
+                </tr>
+				<tr >
+                    <td ><a href="#arrwin5" class="info"></a></td>
+                    <td> <a href="#arrwin5" class="info">SU 1759</a></td>
+                    <td><a href="#arrwin5" class="info">Аэрофлот</a></td>
+                    <td><a href="#arrwin5" class="infoimg"><img src="img/alogo.png"></a></td>
+					<td ><a href="#arrwin5" class="infoUN">Airobus A320</a></td>
+                    <td ><a href="#arrwin5" class="info">Шереметьево</a></td>
+                    <td ><a href="#arrwin5" class="infotime">13 августа, 12:25</a></td>
+                    <td ><a href="#arrwin5" class="infotime">13 августа, 15:05</a></td>
+                    <td ><a href="#arrwin5" class="info">ожидание посадки</a></td>
+                    <td ><a href="#arrwin5" class="infotime">-</a></td>
+                </tr>
+				<tr >
+                    <td ><a href="#arrwin6" class="info"></a></td>
+                    <td> <a href="#arrwin6" class="info">DP 182</a></td>
+                    <td><a href="#arrwin6" class="info">Победа</a></td>
+                    <td><a href="#arrwin6" class="infoimg"><img src="img/poblogo.png"></a></td>
+					<td ><a href="#arrwin6" class="infoUN">Boeing 737-800</a></td>
+                    <td ><a href="#arrwin6" class="info">Внуково</a></td>
+                    <td ><a href="#arrwin6" class="infotime">13 августа, 17:45</a></td>
+                    <td ><a href="#arrwin6" class="infotime">13 августа, 19:05</a></td>
+                    <td ><a href="#arrwin6" class="info">отменён</a></td>
+                    <td ><a href="#arrwin6" class="infotime">-</a></td>
+                </tr>
+				</tbody>
+				</table>
+				<table id="out">
+				<tbody>
+				<tr >
+                    <td ><a href="#outwin1" class="info"></a></td>
+                    <td> <a href="#outwin1" class="info">5N 513</a></td>
+                    <td><a href="#outwin1" class="info">Нордавиа</a></td>
+                    <td><a href="#outwin1" class="infoimg"><img src="img/nordlogo.png"></a></td>
+					<td ><a href="#outwin1" class="infoUN">Boeing 737-500</a></td>
+                    <td ><a href="#outwin1" class="info">Санкт-Петербург</a></td>
+                    <td ><a href="#outwin1" class="infotime">13 августа, 00:20</a></td>
+                    <td ><a href="#outwin1" class="infotime">13 августа, 01:40</a></td>
+                    <td ><a href="#outwin1" class="info">приземлился</a></td>
+                    <td ><a href="#outwin1" class="infotime">-</a></td>
+                </tr>
+				<tr >
+                    <td ><a href="#outwin2" class="info"></a></td>
+                    <td> <a href="#outwin2" class="info">SU 1184</a></td>
+                    <td><a href="#outwin2" class="info">Аэрофлот</a></td>
+                    <td><a href="#outwin2" class="infoimg"><img src="img/alogo.png"></a></td>
+					<td ><a href="#outwin2" class="infoUN">Airobus A320</a></td>
+                    <td ><a href="#outwin2" class="info">Москва</a></td>
+                    <td ><a href="#outwin2" class="infotime">13 августа, 00:50</a></td>
+                    <td ><a href="#outwin2" class="infotime">13 августа, 01:30</a></td>
+                    <td ><a href="#outwin2" class="info">приземлился</a></td>
+                    <td ><a href="#outwin2" class="infotime">-</a></td>
+                </tr>
+				<tr >
+                    <td ><a href="#outwin3" class="info"></a></td>
+                    <td> <a href="#outwin3" class="info">U6 582</a></td>
+                    <td><a href="#outwin3" class="info">Уральские Авиалинии</a></td>
+                    <td><a href="#outwin3" class="infoimg"><img src="img/urallogo.png"></a></td>
+					<td ><a href="#outwin3" class="infoUN">Airbus A320</a></td>
+                    <td ><a href="#outwin3" class="info">Симферополь</a></td>
+                    <td ><a href="#outwin3" class="infotime">13 августа, 09:30</a></td>
+                    <td ><a href="#outwin3" class="infotime">13 августа, 11:30</a></td>
+                    <td ><a href="#outwin3" class="info">по расписанию</a></td>
+                    <td ><a href="#outwin3" class="infotime">с нетерпением</a></td>
+                </tr>
+				<tr >
+                    <td ><a href="#outwin4" class="info"></a></td>
+                    <td> <a href="#outwin4" class="info">N4 5818</a></td>
+                    <td><a href="#outwin4" class="info">Нордавиа</a></td>
+                    <td><a href="#outwin4" class="infoimg"><img src="img/nordlogo.png"></a></td>
+					<td ><a href="#outwin4" class="infoUN">Boeing 737</a></td>
+                    <td ><a href="#outwin4" class="info">Анталья</a></td>
+                    <td ><a href="#outwin4" class="infotime">13 августа, 10:15</a></td>
+                    <td ><a href="#outwin4" class="infotime">13 августа, 12:30</a></td>
+                    <td ><a href="#outwin4" class="info">по расписанию</a></td>
+                    <td ><a href="#outwin4" class="infotime">-</a></td>
+                </tr>
+				<tr >
+                    <td ><a href="#outwin5" class="info"></a></td>
+                    <td> <a href="#outwin5" class="info">SU 1758</a></td>
+                    <td><a href="#outwin5" class="info">Аэрофлот</a></td>
+                    <td><a href="#outwin5" class="infoimg"><img src="img/alogo.png"></a></td>
+					<td ><a href="#outwin5" class="infoUN">Airobus A320</a></td>
+                    <td ><a href="#outwin5" class="info">Москва</a></td>
+                    <td ><a href="#outwin5" class="infotime">13 августа, 11:15</a></td>
+                    <td ><a href="#outwin5" class="infotime">13 августа, 12:55</a></td>
+                    <td ><a href="#outwin5" class="info">по расписанию</a></td>
+                    <td ><a href="#outwin5" class="infotime">скоро вылет</a></td>
+                </tr>
+				<tr >
+                    <td ><a href="#outwin6" class="info"></a></td>
+                    <td> <a href="#outwin6" class="info">DP 181</a></td>
+                    <td><a href="#outwin6" class="info">Победа</a></td>
+                    <td><a href="#outwin6" class="infoimg"><img src="img/poblogo.png"></a></td>
+					<td ><a href="#outwin6" class="infoUN">Boeing 737-800</a></td>
+                    <td ><a href="#outwin6" class="info">Москва</a></td>
+                    <td ><a href="#outwin6" class="infotime">13 августа, 14:25</a></td>
+                    <td ><a href="#outwin6" class="infotime">13 августа, 16:55</a></td>
+                    <td ><a href="#outwin6" class="info">по расписанию</a></td>
+                    <td ><a href="#outwin6" class="infotime">Все отлично</a></td>
+                </tr>
+				<tr >
+                    <td ><a href="#outwin7" class="info"></a></td>
+                    <td> <a href="#outwin7" class="info">SU 1182</a></td>
+                    <td><a href="#outwin7" class="info">Аэрофлот</a></td>
+                    <td><a href="#outwin7" class="infoimg"><img src="img/alogo.png"></a></td>
+					<td ><a href="#outwin7" class="infoUN">Airobus A320</a></td>
+                    <td ><a href="#outwin7" class="info">Москва</a></td>
+                    <td ><a href="#outwin7" class="infotime">13 августа, 15:15</a></td>
+                    <td ><a href="#outwin7" class="infotime">13 августа, 18:25</a></td>
+                    <td ><a href="#outwin7" class="info">по расписанию</a></td>
+                    <td ><a href="#outwin7" class="infotime">скоро вылет</a></td>
+                </tr>
+				<tr >
+                    <td ><a href="#outwin8" class="info"></a></td>
+                    <td> <a href="#outwin8" class="info">SU 1186</a></td>
+                   <td><a href="#outwin8" class="info">Аэрофлот</a></td>
+                    <td><a href="#outwin8" class="infoimg"><img src="img/alogo.png"></a></td>
+					<td ><a href="#outwin8" class="infoUN">Sukhoi superjet 100</a></td>
+                    <td ><a href="#outwin8" class="info">Москва</a></td>
+                    <td ><a href="#outwin8" class="infotime">13 августа, 19:30</a></td>
+                    <td ><a href="#outwin8" class="infotime">13 августа, 21:05</a></td>
+                    <td ><a href="#outwin8" class="info">по расписанию</a></td>
+                    <td ><a href="#outwin8" class="infotime">-</a></td>
+                </tr>
+				<tr >
+                    <td ><a href="#outwin9" class="info"></a></td>
+                    <td> <a href="#outwin9" class="info">S7 1165</a></td>
+                    <td><a href="#outwin9" class="info">S7 Airlines</a></td>
+                    <td><a href="#outwin9" class="infoimg"><img src="img/s7logo.png"></a></td>
+					<td ><a href="#outwin9" class="infoUN">Airobus A319</a></td>
+                    <td ><a href="#outwin9" class="info">Москва</a></td>
+                    <td ><a href="#outwin9" class="infotime">13 августа, 20:30</a></td>
+                    <td ><a href="#outwin9" class="infotime">13 августа, 22:15</a></td>
+                    <td ><a href="#outwin9" class="info">по расписанию</a></td>
+                    <td ><a href="#outwin9" class="infotime">-</a></td>
+                </tr>
+            </tbody>
+        </table>
+		
+        <!-- Модальные окна вылета -->
+       
+	   
+		 <a href="#x" class="overlay" id="arrwin1"></a>
+		<div class="modalwin">
+		<img src="img/s7plane.jpeg" style="float:right; margin:5px 10px 5px 0; border:0; " ></img>
+
+         <span>Тип рейса</span>:<img src="img/arr_plane.png">
+		 <br>
+		    <span>Номер рейса</span>:S7 1170
+		 <br>
+		    <span>Авиакомпания</span>:S7 Airlines
+		 <br>
+		    <span>Логотип <br> авиакомпании</span>: <img src="img/s7logo.png">
+		 <br>
+		    <span>Тип воздушного судна</span>:Airobus A319
+		 <br>
+		    <span>Аэропорт назначения</span>:Домодедово
+		 <br>
+		 <span>Время вылета</span>:13 августа, 05:25
+		 <br>
+		    <span>Время прилета</span>:13 августа, 07:30
+		 <br>
+		    <span>Статус рейса</span>: вылетел
+		 <br>
+		    <span>Примечание</span>: -
+			<a class="close" title="Закрыть" href="#close"></a>
+        </div>
+		
+		
+		 <a href="#x" class="overlay" id="arrwin2"></a>
+        <div class="modalwin">
+		<img src="img/flotplane.jpg" style="float:right; margin:5px 10px 5px 0; border:0; " ></img>
+
+         <span>Тип рейса</span>:<img src="img/arr_plane.png">
+		 <br>
+		    <span>Номер рейса</span>:SU 1185
+		 <br>
+		    <span>Авиакомпания</span>:Аэрофлот
+		 <br>
+		    <span>Логотип <br> авиакомпании</span>: <img src="img/alogo.png">
+		 <br>
+		    <span>Тип воздушного судна</span>:Airobus A320
+		 <br>
+		    <span>Аэропорт назначения</span>:Шереметьево
+		 <br>
+		 <span>Время вылета</span>:13 августа, 06:05
+		 <br>
+		    <span>Время прилета</span>:13 августа, 08:35
+		 <br>
+		    <span>Статус рейса</span>: вылетел
+		 <br>
+		    <span>Примечание</span>: -
+			<a class="close" title="Закрыть" href="#close"></a>
+        </div>
+		
+		
+		 <a href="#x" class="overlay" id="arrwin3"></a>
+        <div class="modalwin">
+		<img src="img/norpla.jpg" style="float:right; margin:5px 10px 5px 0; border:0; " ></img>
+
+         <span>Тип рейса</span>:<img src="img/arr_plane.png">
+		 <br>
+		    <span>Номер рейса</span>:5N 512
+		 <br>
+		    <span>Авиакомпания</span>:Нордавиа
+		 <br>
+		    <span>Логотип <br> авиакомпании</span>: <img src="img/nordlogo.jpg">
+		 <br>
+		    <span>Тип воздушного судна</span>:Boeing 737-500
+		 <br>
+		    <span>Аэропорт назначения</span>:Санкт-Петербург
+		 <br>
+		 <span>Время вылета</span>:13 августа, 06:35
+		 <br>
+		    <span>Время прилета</span>:13 августа, 09:45
+		 <br>
+		    <span>Статус рейса</span>: посадка закончена
+		 <br>
+		    <span>Примечание</span>: -
+			<a class="close" title="Закрыть" href="#close"></a>
+        </div>
+		
+		
+		 <a href="#x" class="overlay" id="arrwin4"></a>
+        <div class="modalwin">
+		<img src="img/uralpla.jpg" style="float:right; margin:5px 10px 5px 0; border:0; " ></img>
+
+         <span>Тип рейса</span>:<img src="img/arr_plane.png">
+		 <br>
+		    <span>Номер рейса</span>:U6 581
+		 <br>
+		    <span>Авиакомпания</span>:Уральские Авиалинии
+		 <br>
+		    <span>Логотип <br> авиакомпании</span>: <img src="img/urallogo.png">
+		 <br>
+		    <span>Тип воздушного судна</span>:Airobus A320
+		 <br>
+		    <span>Аэропорт назначения</span>:Симферополь
+		 <br>
+		 <span>Время вылета</span>:13 августа, 11:05
+		 <br>
+		    <span>Время прилета</span>:13 августа, 13:45
+		 <br>
+			    <span>Статус рейса</span>: регистрации
+		 <br>
+		    <span>Примечание</span>: до окончания регистрации 20 мин.
+				<a class="close" title="Закрыть" href="#close"></a>
+        </div>
+		
+		
+		 <a href="#x" class="overlay" id="arrwin5"></a>
+        <div class="modalwin">
+		<img src="img/flotplane.jpg" style="float:right; margin:5px 10px 5px 0; border:0; " ></img>
+
+         <span>Тип рейса</span>:<img src="img/arr_plane.png">
+		 <br>
+		    <span>Номер рейса</span>:SU 1759
+		 <br>
+		    <span>Авиакомпания</span>:Аэрофлот
+		 <br>
+		    <span>Логотип <br> авиакомпании</span>: <img src="img/alogo.png">
+		 <br>
+		    <span>Тип воздушного судна</span>:Airobus A320
+		 <br>
+		    <span>Аэропорт назначения</span>:Шереметьево
+		 <br>
+		 <span>Время вылета</span>:13 августа, 12:25
+		 <br>
+		    <span>Время прилета</span>:13 августа, 15:05
+		 <br>
+		    <span>Статус рейса</span>: ожидание посадки
+		 <br>
+		    <span>Примечание</span>: -
+			<a class="close" title="Закрыть" href="#close"></a>
+        </div>
+		
+		
+		<a href="#x" class="overlay" id="arrwin6"></a>
+        <div class="modalwin">
+		<img src="img/pobplane.jpg" style="float:right; margin:5px 10px 5px 0; border:0; " ></img>
+
+         <span>Тип рейса</span>:<img src="img/arr_plane.png">
+		 <br>
+		    <span>Номер рейса</span>:DP 182
+		 <br>
+		    <span>Авиакомпания</span>:Победа
+		 <br>
+		    <span>Логотип <br> авиакомпании</span>: <img src="img/poblogo.png">
+		 <br>
+		    <span>Тип воздушного судна</span>:Boeing 737-800 
+		 <br>
+		    <span>Аэропорт назначения</span>:Внуково
+		 <br>
+		 <span>Время вылета</span>:13 августа, 17:45
+		 <br>
+		    <span>Время прилета</span>:13 августа, 19:05
+		 <br>
+		    <span>Статус рейса</span>: отменен
+		 <br>
+		    <span>Примечание</span>: -
+			<a class="close" title="Закрыть" href="#close"></a>
+        </div>
+		
+		<!-- Модальные окна прибытия -->
+       
+		 <a href="#x" class="overlay" id="outwin1"></a>
+        <div class="modalwin">
+		<img src="img/norpla.jpg" style="float:right; margin:5px 10px 5px 0; border:0; " ></img>
+
+         <span>Тип рейса</span>:<img src="img/out_plane.png">
+		 <br>
+		    <span>Номер рейса</span>:5N 513
+		 <br>
+		    <span>Авиакомпания</span>:Нордавиа
+		 <br>
+		    <span>Логотип <br> авиакомпании</span>: <img src="img/nordlogo.jpg">
+		 <br>
+		    <span>Тип воздушного судна</span>:Boeing 737-500
+		 <br>
+		    <span>Аэропорт назначения</span>:Санкт-Петербург
+		 <br>
+		 <span>Время вылета</span>:13 августа, 00:20
+		 <br>
+		    <span>Время прилета</span>:13 августа, 01:40
+		 <br>
+		    <span>Статус рейса</span>: приземлился
+		 <br>
+		    <span>Примечание</span>: -
+			<a class="close" title="Закрыть" href="#close"></a>
+        </div>
+		
+		
+		 <a href="#x" class="overlay" id="outwin2"></a>
+        <div class="modalwin">
+		<img src="img/flotplane.jpg" style="float:right; margin:5px 10px 5px 0; border:0; " ></img>
+
+         <span>Тип рейса</span>:<img src="img/out_plane.png">
+		 <br>
+		    <span>Номер рейса</span>:SU 1184
+		 <br>
+		    <span>Авиакомпания</span>:Аэрофлот
+		 <br>
+		    <span>Логотип <br> авиакомпании</span>: <img src="img/alogo.png">
+		 <br>
+		    <span>Тип воздушного судна</span>:Airobus A320
+		 <br>
+		    <span>Аэропорт назначения</span>:Москва
+		 <br>
+		 <span>Время вылета</span>:13 августа, 00:50
+		 <br>
+		    <span>Время прилета</span>:13 августа, 01:30
+		 <br>
+		    <span>Статус рейса</span>: приземлился
+		 <br>
+		    <span>Примечание</span>: -
+			<a class="close" title="Закрыть" href="#close"></a>
+        </div>
+		
+		
+		 <a href="#x" class="overlay" id="outwin3"></a>
+        <div class="modalwin">
+		<img src="img/uralpla.jpg" style="float:right; margin:5px 10px 5px 0; border:0; " ></img>
+
+         <span>Тип рейса</span>:<img src="img/out_plane.png">
+		 <br>
+		    <span>Номер рейса</span>:U6 582
+		 <br>
+		    <span>Авиакомпания</span>:Уральские Авиалинии
+		 <br>
+		    <span>Логотип <br> авиакомпании</span>: <img src="img/urallogo.png">
+		 <br>
+		    <span>Тип воздушного судна</span>:Airobus A320
+		 <br>
+		    <span>Аэропорт назначения</span>:Симферополь
+		 <br>
+		 <span>Время вылета</span>:13 августа, 09:30
+		 <br>
+		    <span>Время прилета</span>:13 августа, 11:30
+		 <br>
+			    <span>Статус рейса</span>: по расписанию
+		 <br>
+		    <span>Примечание</span>: с нетерпением
+				<a class="close" title="Закрыть" href="#close"></a>
+        </div>
+		
+		<a href="#x" class="overlay" id="outwin4"></a>
+        <div class="modalwin">
+		<img src="img/norpla.jpg" style="float:right; margin:5px 10px 5px 0; border:0; " ></img>
+
+         <span>Тип рейса</span>:<img src="img/out_plane.png">
+		 <br>
+		    <span>Номер рейса</span>:N4 5818
+		 <br>
+		    <span>Авиакомпания</span>:Нордавиа
+		 <br>
+		    <span>Логотип <br> авиакомпании</span>: <img src="img/nordlogo.jpg">
+		 <br>
+		    <span>Тип воздушного судна</span>:Boeing 737
+		 <br>
+		    <span>Аэропорт назначения</span>:Анталья
+		 <br>
+		 <span>Время вылета</span>:13 августа, 10:15
+		 <br>
+		    <span>Время прилета</span>:13 августа, 12:30
+		 <br>
+		    <span>Статус рейса</span>: приземлился
+		 <br>
+		    <span>Примечание</span>: -
+			<a class="close" title="Закрыть" href="#close"></a>
+        </div>
+		
+		
+		 <a href="#x" class="overlay" id="outwin5"></a>
+        <div class="modalwin">
+		<img src="img/flotplane.jpg" style="float:right; margin:5px 10px 5px 0; border:0; " ></img>
+
+         <span>Тип рейса</span>:<img src="img/out_plane.png">
+		 <br>
+		    <span>Номер рейса</span>:SU 1758
+		 <br>
+		    <span>Авиакомпания</span>:Аэрофлот
+		 <br>
+		    <span>Логотип <br> авиакомпании</span>: <img src="img/alogo.png">
+		 <br>
+		    <span>Тип воздушного судна</span>:Airobus A320
+		 <br>
+		    <span>Аэропорт назначения</span>: Москва
+		 <br>
+		 <span>Время вылета</span>:13 августа, 11:15
+		 <br>
+		    <span>Время прилета</span>:13 августа, 12:25
+		 <br>
+		    <span>Статус рейса</span>: ожидание посадки
+		 <br>
+		    <span>Примечание</span>: скоро вылет
+			<a class="close" title="Закрыть" href="#close"></a>
+        </div>
+		
+		
+		<a href="#x" class="overlay" id="outwin6"></a>
+        <div class="modalwin">
+		<img src="img/pobplane.jpg" style="float:right; margin:5px 10px 5px 0; border:0; " ></img>
+
+         <span>Тип рейса</span>:<img src="img/out_plane.png">
+		 <br>
+		    <span>Номер рейса</span>:DP 181
+		 <br>
+		    <span>Авиакомпания</span>:Победа
+		 <br>
+		    <span>Логотип <br> авиакомпании</span>: <img src="img/poblogo.png">
+		 <br>
+		    <span>Тип воздушного судна</span>:Boeing 737-800 
+		 <br>
+		    <span>Аэропорт назначения</span>:Москва
+		 <br>
+		 <span>Время вылета</span>:13 августа, 14:25
+		 <br>
+		    <span>Время прилета</span>:13 августа, 16:55
+		 <br>
+		    <span>Статус рейса</span>: по расписанию
+		 <br>
+		    <span>Примечание</span>: все отлично
+			<a class="close" title="Закрыть" href="#close"></a>
+        </div>
+		
+		
+		 <a href="#x" class="overlay" id="outwin7"></a>
+        <div class="modalwin">
+		<img src="img/flotplane.jpg" style="float:right; margin:5px 10px 5px 0; border:0; " ></img>
+
+         <span>Тип рейса</span>:<img src="img/out_plane.png">
+		 <br>
+		    <span>Номер рейса</span>:SU 1182
+		 <br>
+		    <span>Авиакомпания</span>:Аэрофлот
+		 <br>
+		    <span>Логотип <br> авиакомпании</span>: <img src="img/alogo.png">
+		 <br>
+		    <span>Тип воздушного судна</span>:Airobus A320
+		 <br>
+		    <span>Аэропорт назначения</span>:Москва
+		 <br>
+		 <span>Время вылета</span>:13 августа, 15:15
+		 <br>
+		    <span>Время прилета</span>:13 августа, 18:25
+		 <br>
+		    <span>Статус рейса</span>: по расписанию
+		 <br>
+		    <span>Примечание</span>: скоро вылет
+			<a class="close" title="Закрыть" href="#close"></a>
+        </div>
+		
+		
+		 <a href="#x" class="overlay" id="outwin8"></a>
+        <div class="modalwin">
+		<img src="img/flotplane.jpg" style="float:right; margin:5px 10px 5px 0; border:0; " ></img>
+
+         <span>Тип рейса</span>:<img src="img/out_plane.png">
+		 <br>
+		    <span>Номер рейса</span>:SU 1186
+		 <br>
+		    <span>Авиакомпания</span>:Аэрофлот
+		 <br>
+		    <span>Логотип <br> авиакомпании</span>: <img src="img/alogo.png">
+		 <br>
+		    <span>Тип воздушного судна</span>:Airobus A320
+		 <br>
+		    <span>Аэропорт назначения</span>:Москва
+		 <br>
+		 <span>Время вылета</span>:13 августа, 19:30
+		 <br>
+		    <span>Время прилета</span>:13 августа, 21:05
+		 <br>
+		    <span>Статус рейса</span>: по расписанию
+		 <br>
+		    <span>Примечание</span>: -
+			<a class="close" title="Закрыть" href="#close"></a>
+        </div>
+		
+			
+			 <a href="#x" class="overlay" id="outwin9"></a>
+        <div class="modalwin">
+		<img src="img/s7plane.jpeg" style="float:right; margin:5px 10px 5px 0; border:0; " ></img>
+
+         <span>Тип рейса</span>:<img src="img/out_plane.png">
+		 <br>
+		    <span>Номер рейса</span>:S7 1165
+		 <br>
+		    <span>Авиакомпания</span>:S7 Airlines
+		 <br>
+		    <span>Логотип <br> авиакомпании</span>: <img src="img/s7logo.png">
+		 <br>
+		    <span>Тип воздушного судна</span>:Airobus A319
+		 <br>
+		    <span>Аэропорт назначения</span>:Москва
+		 <br>
+		 <span>Время вылета</span>:13 августа, 20:30
+		 <br>
+		    <span>Время прилета</span>:13 августа, 22:15
+		 <br>
+		    <span>Статус рейса</span>: по расписанию
+		 <br>
+		    <span>Примечание</span>: -
+			<a class="close" title="Закрыть" href="#close"></a>
+        </div>
+			
+				<div id="hi">
+					Работу выполнела 
+					Решетникова Мария
+				</div>
+		</div>
+    
+</body>
+</html>

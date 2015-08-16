@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="styles/style.css">
+		<script src="scripts/jquery-2.1.4.min.js"></script>
+		<script src="scripts/my_scripts.js"></script>
+		<title>Онлайн-табло аэропорта</title>
+</head>
+<body>
+<div id="tablo">
+
+		<div id="check">
+			<input type="checkbox" id="out_check" checked="checked">
+			<label for="out_check" >Прибытие</label>
+			<input type="checkbox"  id="arrival_check"  checked="checked" >
+			<label for="arrival_check" >Отправление</label>
+		</div>
+		
+		<div id="title">Онлайн-табло аэропорта Гумрак</div>
+		<br>	
+	
+		<table class="zebra" >
+           <thead>   
+			<tr  >
+                    <th>Тип рейса</th>
+                    <th >Номер рейса</th>
+                    <th>Авиакомпания</th>
+                    <th>Логотип авиакомпании</th>
+					<th >Тип воздушного судна</th>
+                    <th >Аэропорт назначения</th>
+                    <th >Время вылета</th>
+                    <th >Время прилёта</th>
+                    <th >Статус рейса</th>
+                    <th >Примечание</th>
+                </tr>
+				</thead>
+				
+			<tbody>
+				<tr class="arr" onclick="alert($(this).text())">
+					<td ></td>
+                    <td> S7 1170</td>
+                    <td>S7 Airlines</td>
+                    <td><img src="img/s7logo.png"></td>
+					<td >Airobus A319</td>
+                    <td >Домодедово</td>
+                    <td >13 августа, 05:25</td>
+                    <td >13 августа, 07:30</td>
+                    <td >вылетел</td>
+                    <td >-</td>
+                </tr>
+				<tr class="arr" onclick="alert($(this).text())">
+                    <td ></td>
+                    <td> SU 1185</td>
+                    <td>Аэрофлот</td>
+                    <td><img src="img/alogo.png"></td>
+					<td >Airobus A320</td>
+                    <td >Шереметьево</td>
+                    <td >13 августа, 06:05</td>
+                    <td >13 августа, 08:35</td>
+                    <td >вылетел</td>
+                    <td >-</td>
+                </tr>
+				<tr class="out" onclick="alert($(this).text())">
+                    <td ></td>
+                    <td> SU 1186</td>
+					<td>Аэрофлот</td>
+                    <td><img src="img/alogo.png"></td>
+					<td >Sukhoi superjet 100</td>
+                    <td >Москва</td>
+                    <td >13 августа, 19:30</td>
+                    <td >13 августа, 21:05</td>
+                    <td >по расписанию</td>
+                    <td >-</td>
+                </tr>
+				<tr class="arr" onclick="alert($(this).text())">
+                    <td ></td>
+                    <td> 5N 512</td>
+                    <td>Нордавиа</td>
+                    <td><img src="img/nordlogo.png"></td>
+					<td >Boeing 737-500</td>
+                    <td >Санкт-Петербург</td>
+                    <td >13 августа, 06:35</td>
+                    <td >13 августа, 9:45</td>
+                    <td >посадка закончена</td>
+                    <td >-</td>
+                </tr>
+				<tr class="arr" onclick="alert($(this).text())">
+                    <td ></td>
+                    <td> U6 581</td>
+                    <td>Уральские Авиалинии</td>
+                    <td><img src="img/urallogo.png"></td>
+					<td >Airobus A320</td>
+                    <td >Симферополь</td>
+                    <td >13 августа, 11:05</td>
+                    <td >13 августа, 13:45</td>
+                    <td >регистрация</td>
+                    <td >до окончания регистрации 20 мин.</td>
+                </tr>
+				<tr class="arr" onclick="alert($(this).text())">
+                    <td ></td>
+                    <td> SU 1759</td>
+                    <td>Аэрофлот</td>
+                    <td><img src="img/alogo.png"></td>
+					<td >Airobus A320</td>
+                    <td >Шереметьево</td>
+                    <td >13 августа, 12:25</td>
+                    <td >13 августа, 15:05</td>
+                    <td >ожидание посадки</td>
+                    <td >-</td>
+                </tr>
+				<tr class="out" onclick="alert($(this).text())">
+                    <td ></td>
+                    <td> 5N 513</td>
+                    <td>Нордавиа</td>
+                    <td><img src="img/nordlogo.png"></td>
+					<td >Boeing 737-500</td>
+                    <td >Санкт-Петербург</td>
+                    <td >13 августа, 00:20</td>
+                    <td >13 августа, 01:40</td>
+                    <td >приземлился</td>
+                    <td >-</td>
+                </tr>
+				<tr class="out" onclick="alert($(this).text())" >
+                    <td ></td>
+                    <td> SU 1184</td>
+                    <td>Аэрофлот</td>
+                    <td><img src="img/alogo.png"></td>
+					<td >Airobus A320</td>
+                    <td >Москва</td>
+                    <td >13 августа, 00:50</td>
+                    <td >13 августа, 01:30</td>
+                    <td >приземлился</td>
+                    <td >-</td>
+                </tr>
+				<tr class="out" onclick="alert($(this).text())">
+                    <td ></td>
+                    <td> U6 582</td>
+                    <td>Уральские Авиалинии</td>
+                    <td><img src="img/urallogo.png"></td>
+					<td >Airbus A320</td>
+                    <td >Симферополь</td>
+                    <td >13 августа, 09:30</td>
+                    <td >13 августа, 11:30</td>
+                    <td >по расписанию</td>
+                    <td >с нетерпением</td>
+                </tr>
+				<tr class="out" onclick="alert($(this).text())">
+                    <td ></td>
+                    <td> N4 5818</td>
+                    <td>Нордавиа</td>
+                    <td><img src="img/nordlogo.png"></td>
+					<td >Boeing 737</td>
+                    <td >Анталья</td>
+                    <td >13 августа, 10:15</td>
+                    <td >13 августа, 12:30</td>
+                    <td >по расписанию</td>
+                    <td >-</td>
+                </tr>
+				<tr class="out" onclick="alert($(this).text())">
+                    <td ></td>
+                    <td> SU 1758</td>
+                    <td>Аэрофлот</td>
+                    <td><img src="img/alogo.png"></td>
+					<td >Airobus A320</td>
+                    <td >Москва</td>
+                    <td >13 августа, 11:15</td>
+                    <td >13 августа, 12:55</td>
+                    <td >по расписанию</td>
+                    <td >скоро вылет</td>
+                </tr>
+				<tr class="arr" onclick="alert($(this).text())">
+                    <td ></td>
+                    <td> DP 182</td>
+                    <td>Победа</td>
+                    <td><img src="img/poblogo.png"></td>
+					<td >Boeing 737-800</td>
+                    <td >Внуково</td>
+                    <td >13 августа, 17:45</td>
+                    <td >13 августа, 19:05</td>
+                    <td >отменён</td>
+                    <td >-</td>
+                </tr>
+				<tr class="out" onclick="alert($(this).text())">
+                    <td ></td>
+                    <td> DP 181</td>
+                    <td>Победа</td>
+                    <td><img src="img/poblogo.png"></td>
+					<td >Boeing 737-800</td>
+                    <td >Москва</td>
+                    <td >13 августа, 14:25</td>
+                    <td >13 августа, 16:55</td>
+                    <td >по расписанию</td>
+                    <td >Все отлично</td>
+                </tr>
+				<tr class="out" onclick="alert($(this).text())">
+                    <td ></td>
+                    <td> SU 1182</td>
+                    <td>Аэрофлот</td>
+                    <td><img src="img/alogo.png"></td>
+					<td >Airobus A320</td>
+                    <td >Москва</td>
+                    <td >13 августа, 15:15</td>
+                    <td >13 августа, 18:25</td>
+                    <td >по расписанию</td>
+                    <td >скоро вылет</td>
+                </tr>
+				<tr class="out" onclick="alert($(this).text())">
+                    <td ></td>
+                    <td> S7 1165</td>
+                    <td>S7 Airlines</td>
+                    <td><img src="img/s7logo.png"></td>
+					<td >Airobus A319</td>
+                    <td >Москва</td>
+                    <td >13 августа, 20:30</td>
+                    <td >13 августа, 22:15</td>
+                    <td >по расписанию</td>
+                    <td >-</td>
+                </tr>
+				
+            </tbody>
+        </table>    
+</body>
+</html>

@@ -1,0 +1,320 @@
+
+/* Выполнение пункта 4.  Автоматическок скрытие наименее важных столбцов  */
+
+@media screen and (min-width:1180px) and (max-width : 1400px){
+		td:first-child{width:5%;}
+		td:nth-child(9n+2){width:6%; }
+		  td:nth-child(9n+3){width:10%;  }
+		 td:nth-child(9n+4){width:10%;}
+		 td:nth-child(9n+5){width:10%; }
+		td:nth-child(9n+6){width:10%; }
+		td:nth-child(9n+7){width:10%; }
+		 td:nth-child(9n+8){width:10%;}
+		 td:nth-child(9n+9){width:10%; }
+		td:last-child{width:9%; }
+}
+
+@media screen and (min-width:1000px) and (max-width : 1170px){
+
+#arrival{
+margin-top:-5px;
+}
+
+table{
+width:87%;
+}
+
+#tablo_thead{
+width:86%;
+}
+
+td:nth-child(9n+5){width:9%; }
+
+td:nth-child(9n+6){width:8%; }
+	
+.info{
+padding:12% 4% 12% 4%;
+}
+
+}
+
+@media screen and (min-width:900px) and (max-width : 1050px){
+
+table{
+width:85%;
+}
+
+#tablo_thead{
+width:84%;
+}
+
+#arrival{
+margin-top:-5px;
+}
+
+td:nth-child(9n+3){display:none; }
+
+}
+
+@media screen and (min-width:800px) and (max-width : 900px){
+
+table{
+width:82%;
+}
+
+#tablo_thead{
+width:81%;
+}
+
+td:nth-child(9n+3){display:none; }
+td:nth-child(9n+5){display:none; }
+td:nth-child(9n+4){width:13%;  }
+td:nth-child(9n+6){width:10%;  }
+td:nth-child(9n+7){width:11%; }
+td:nth-child(9n+8){width:11%;}
+td:nth-child(9n+9){width:11%; }
+td:last-child{width:11%; }
+
+#arrival{
+margin-top:0px;
+}
+
+/* Когда происходит сильное сжатие таблицы излишний padding расширяет ячейки. Уменьшаем его значение */
+
+ .infotime{
+padding:3% 1% 3% 1%;
+}
+
+.info{
+padding:15% 1% 15% 1%;
+}
+
+.infoimg{
+padding:30% 20% 1% 20%;}
+}
+
+@media screen and (min-width:700px) and (max-width : 800px)
+{
+body{
+background:
+	url(../img/zc04.png) no-repeat fixed 30% 90%,
+	url(../img/zc05.png) no-repeat fixed 0% 120%,
+	url(../img/pla.png)   no-repeat fixed 20% 88%,
+	url(../img/zc03.png) no-repeat fixed -300px -150px,
+	url(../img/zc04.png) no-repeat fixed 100% 110%,
+	url(../img/zc04.png) no-repeat fixed 50% 50%,
+	url(../img/backgr.jpg)  fixed 10% 10%;
+background-color:#87C0F5;
+}
+
+#arrival{
+margin-top:0px;
+}
+
+table{
+width:80%;
+}
+
+#tablo_thead{
+width:79%;
+}
+
+td:first-child{width:8%;}
+td:nth-child(9n+2){width:9%; }
+td:nth-child(9n+3){display:none; }
+td:nth-child(9n+5){display:none; }
+td:nth-child(9n+4){display:none; }
+td:nth-child(9n+6){width:11%;  }
+td:nth-child(9n+7){width:13%; }
+td:nth-child(9n+8){width:13%;}
+td:nth-child(9n+9){width:12%; }
+ td:last-child{width:14%; }
+ 
+ .infotime{
+padding:3% 1% 3% 1%;
+}
+.info{
+padding:15% 2% 15% 2%;
+}
+
+}
+
+
+
+@media screen and (min-width:600px) and (max-width : 700px)
+{
+body{
+background:
+	url(../img/zc04.png) no-repeat fixed 30% 90%,
+	url(../img/zc05.png) no-repeat fixed 0% 120%,
+	url(../img/pla.png)   no-repeat fixed 20% 88%,
+	url(../img/zc03.png) no-repeat fixed -300px -150px,
+	url(../img/zc04.png) no-repeat fixed 100% 110%,
+	url(../img/zc04.png) no-repeat fixed 50% 50%,
+	url(../img/backgr.jpg)  fixed 10% 10%;
+background-color:#87C0F5;
+}
+
+#arrival{
+	margin-top:0px;
+}
+
+table{
+width:80%;
+}
+
+#tablo_thead{
+width:79%;
+}
+
+td:first-child{width:10%;}
+td:nth-child(9n+2){width:10%; }
+td:nth-child(9n+3){display:none; }
+td:nth-child(9n+5){display:none; }
+td:nth-child(9n+4){display:none; }
+td:nth-child(9n+6){width:16%;  }
+td:nth-child(9n+7){width:13%; }
+td:nth-child(9n+8){width:13%;}
+td:nth-child(9n+9){width:16%; }
+ td:last-child{display:none; }
+ 
+  .infotime{
+padding:3% 1% 3% 1%;
+}
+.info{
+padding:15% 2% 15% 2%;
+}
+
+}
+
+@media screen and (min-width:500px) and (max-width : 600px){
+body{
+background:
+	url(../img/zc05.png) no-repeat fixed 0% 120%,
+	url(../img/pla.png)   no-repeat fixed 20% 88%,
+	url(../img/zc03.png) no-repeat fixed -300px -150px,
+	url(../img/zc04.png) no-repeat fixed 100% 110%,
+	url(../img/backgr.jpg)  fixed 10% 10%;
+background-color:#87C0F5;
+}
+
+#arrival{
+margin-top:0px;
+}
+
+table{
+width:76%;
+}
+
+#tablo_thead{
+width:75%;
+}
+
+td:first-child{width:10%;}
+td:nth-child(9n+2){width:13%; }
+td:nth-child(9n+3){display:none; }
+td:nth-child(9n+5){display:none; }
+td:nth-child(9n+4){display:none; }
+td:nth-child(9n+6){width:20%;  }
+td:nth-child(9n+7){width:16%; }
+td:nth-child(9n+8){width:16%;}
+td:nth-child(9n+9){display:none; }
+ td:last-child{display:none; }
+ 
+#hi{
+display:none;
+}
+
+.infotime{
+padding:3% 1% 3% 1%;
+}
+
+.info{
+padding:15% 5% 15% 5%;
+}
+
+}
+
+@media screen and  (min-width:400px) and (max-width : 500px){
+body{
+background:
+	url(../img/zc05.png) no-repeat fixed 0% 120%,
+	url(../img/zc03.png) no-repeat fixed -300px -150px,
+	url(../img/zc04.png) no-repeat fixed 100% 110%,
+	url(../img/backgr.jpg)  fixed 10% 10%;
+background-color:#87C0F5;
+}
+
+#arrival{
+margin-top:3px;
+}
+
+table{
+width:71%;
+}
+
+#tablo_thead{
+width:70%;
+}
+
+td:first-child{display:none;}
+td:nth-child(9n+2){width:13%; }
+td:nth-child(9n+3){display:none; }
+td:nth-child(9n+5){display:none; }
+td:nth-child(9n+4){display:none; }
+td:nth-child(9n+6){width:21%;  }
+td:nth-child(9n+7){width:17%; }
+td:nth-child(9n+8){width:17%;}
+td:nth-child(9n+9){display:none; }
+td:last-child{display:none; }
+
+#hi{
+display:none;
+}
+
+.infotime{
+padding:3% 1% 3% 1%;
+}
+.info{
+padding:15% 5% 15% 5%;
+}
+
+}
+
+@media screen and  (min-width:300px) and (max-width : 400px){
+body{
+background:
+	url(../img/zc05.png) no-repeat fixed 0% 120%,
+	url(../img/zc03.png) no-repeat fixed -300px -150px,
+	url(../img/zc04.png) no-repeat fixed 100% 110%,
+	url(../img/backgr.jpg)  fixed 10% 10%;
+background-color:#87C0F5;
+}
+
+ #arrival{
+margin-top:18px;
+}
+
+#out{
+margin-top:15px;
+}
+
+label{
+visibility:hidden;
+}
+
+td:first-child{display:none;}
+td:nth-child(9n+2){width:18%; }
+td:nth-child(9n+3){display:none; }
+td:nth-child(9n+5){display:none; }
+td:nth-child(9n+4){display:none; }
+td:nth-child(9n+6){width:26%;  }
+td:nth-child(9n+7){width:22%; }
+td:nth-child(9n+8){display:none;}
+td:nth-child(9n+9){display:none; }
+ td:last-child{display:none; }
+ 
+#hi{display:none;}
+
+}
+
