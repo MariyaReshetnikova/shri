@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Task3</title>  
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/jdataview.js"></script>
+</head>
+<body>
+
+<div id="container">
+
+	<canvas id="canvas" width="512" height="256">Обновите свой браузер для визуализации объекта</canvas>
+	
+	<div id="buttons">
+	   <button id="playAudio">►</button>
+	   <button id="pauseAudio">||</button>
+	   <button id="stopAudio">■</button>
+	</div>
+	
+	<div class="labelsel">Выберите вид визуализации:
+		<select id="select_visual">
+			<option value="10">SIMPLE WAVEFORM</option>
+			<option value="20">BLUE SPECTRUM</option>
+			<option value="30">CIRCLE</option>
+		</select>
+	</div>
+
+	<div id="loadfile">
+		<div id="dropZone">
+        Перетащите аудиофайл в данную область.
+		</div>
+		<label for="file">Выберите музыкальный файл:</label>
+			<input type="file" id="file" name="file"/>
+	</div>
+	
+	<div id="equalize">
+	   <div class="labelsel">Выберите режим эквалайзера:
+			<select id="select_equalizer">
+				<option value="1">NORMAL</option>
+				<option value="2">ROCK</option>
+				<option value="3">JAZZ</option>
+				<option value="4">CLASSIC</option>
+				<option value="5">POP</option>
+			</select>
+		</div>
+		<div id="filters"></div>
+	</div>
+	
+</div>   
+
+</body>
+</html>
